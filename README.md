@@ -1,18 +1,18 @@
-# trackmate
-## steps to create a django project
+# Trackmate
+## Steps to create a django project
 
-### commands to be followed:
+### Commands to be followed:
 
- 1. django-admin startproject <project_name> -----> this command creates a django folder with the project name.
- 2. cd <project-name> ------> redirects to project folder
- 3. python manage.py startapp <app-name> ---------> this command creates the working django project inside the project folder
- 4. python manage.py makemigrations
- 5. python manage.py migrate ---------> these two commands are used to detect changes and update the website on server
- 6. python manage.py runserver --------> runs the project and shows the default output 
+ 1. ```django-admin startproject <project_name>``` ---> this command creates a django folder with the project name.
+ 2. ```cd <project_name>``` ------> redirects to project folder
+ 3. ```python manage.py startapp <app_name>``` ---------> this command creates the working django project inside the project folder
+ 4. ```python manage.py makemigrations```
+ 5. ```python manage.py migrate``` ---------> these two commands are used to detect changes and update the website on server
+ 6. ```python manage.py runserver``` --------> runs the project and shows the default output 
 
-### changes to be made:
+### Changes to be made:
 
-1. create a urls.py file in <app-name> and add create the urls for the views created
+1. Create a urls.py file in <app_name> and add create the urls for the views created
 
 eg:
 ``` 
@@ -26,13 +26,13 @@ urlpatterns = [
 ]
 ```
 
-2. then add <app-name> urls file to the <project-name>/urls.py file
+2. Then add <app-name> urls file to the <project_name>/urls.py file
    
 eg:
 ```
 path('',include('finance_app.urls')),
 ```
-3. Dont forget to add ur <app-name> to installed apps in settings.py file
+3. Dont forget to add ur <app_name> to installed apps in settings.py file
    
 eg:
 ```
@@ -47,5 +47,5 @@ eg:
     
 ]
 ```
-Now you are all set create template folder to add all ur static files i.e html,css etc. then create views for the html pages and add them in urls.py of <app-name> folder.
+Now you are all set create template folder to add all ur static files i.e html,css etc. then create views for the html pages and add them in urls.py of <app_name> folder.
 apply migrations and run server to see the output of yout code.
