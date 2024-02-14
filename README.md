@@ -1,16 +1,16 @@
 # trackmate
-### steps to create a django project
+## steps to create a django project
 
-commands to be followed:
+### commands to be followed:
 
- django-admin startproject <project_name> -----> this command creates a django folder with the project name.
- cd <project-name> ------> redirects to project folder
- python manage.py startapp <app-name> ---------> this command creates the working django project inside the project folder
- python manage.py makemigrations
- python manage.py migrate ---------> these two commands are used to detect changes and update the website on server
- python manage.py runserver --------> runs the project and shows the default output 
+ 1. django-admin startproject <project_name> -----> this command creates a django folder with the project name.
+ 2. cd <project-name> ------> redirects to project folder
+ 3. python manage.py startapp <app-name> ---------> this command creates the working django project inside the project folder
+ 4. python manage.py makemigrations
+ 5. python manage.py migrate ---------> these two commands are used to detect changes and update the website on server
+ 6. python manage.py runserver --------> runs the project and shows the default output 
 
-changes to be made:
+### changes to be made:
 
 1. create a urls.py file in <app-name> and add create the urls for the views created
 
