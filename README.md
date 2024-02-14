@@ -15,6 +15,7 @@ changes to be made:
 1. create a urls.py file in <app-name> and add create the urls for the views created
 
 eg:
+'''
 from django import views
 from django.urls import path
 from .views import expense_list
@@ -23,7 +24,7 @@ urlpatterns = [
     path('', expense_list, name='expense_list'),
     # Add more URL patterns as needed for other views
 ]
-
+'''
 
 2. then add <app-name> urls file to the <project-name>/urls.py file
    
