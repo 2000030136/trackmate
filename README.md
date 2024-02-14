@@ -13,7 +13,8 @@ commands to be followed:
 changes to be made:
 
 1. create a urls.py file in <app-name> and add create the urls for the views created
-  eg:
+
+eg:
 from django import views
 from django.urls import path
 from .views import expense_list
@@ -24,12 +25,14 @@ urlpatterns = [
 ]
 
 
-3. then add <app-name> urls file to the <project-name>/urls.py file
-   eg:
+2. then add <app-name> urls file to the <project-name>/urls.py file
+   
+eg:
 path('',include('finance_app.urls')),
 
-4. Dont forget to add ur <app-name> to installed apps in settings.py file
-   eg:
+3. Dont forget to add ur <app-name> to installed apps in settings.py file
+   
+eg:
    INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
